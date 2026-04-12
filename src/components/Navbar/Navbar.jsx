@@ -16,7 +16,6 @@ const Navbar = () => {
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="/about">About</Link></li>
                         <li><Link href='/contact'>Contacts</Link></li>
-                        <li><Link href='/contact/developer'>Developers</Link></li>
                         <li><Link href='/blogs'>Blogs</Link></li>
                     </ul>
                 </div>
@@ -27,8 +26,8 @@ const Navbar = () => {
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/about">About</Link></li>
                     <li><Link href='/contact'>Contacts</Link></li>
-                    <li><Link href='/contact/developer'>Developers</Link></li>
                     <li><Link href='/blogs'>Blogs</Link></li>
+                    <li><Link href='/dashboard'>DashBoard</Link></li>
 
                 </ul>
             </div>
