@@ -28,6 +28,7 @@ const Navbar = () => {
                     <li><Link href='/contact'>Contacts</Link></li>
                     <li><Link href='/blogs'>Blogs</Link></li>
                     <li><Link href='/dashboard'>DashBoard</Link></li>
+                    <li><Link href='/users'>Users</Link></li>
 
                 </ul>
             </div>
