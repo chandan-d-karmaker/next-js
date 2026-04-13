@@ -1,7 +1,11 @@
+'use client'
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React from 'react';
 
 const Navbar = () => {
+
+    const pathname = usePathname();
     return (
 
         <div className="navbar bg-base-100 shadow-sm">
@@ -23,12 +27,12 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="/about">About</Link></li>
-                    <li><Link href='/contact'>Contacts</Link></li>
-                    <li><Link href='/blogs'>Blogs</Link></li>
-                    <li><Link href='/dashboard'>DashBoard</Link></li>
-                    <li><Link href='/users'>Users</Link></li>
+                    <li><Link href="/" className={pathname === '/' ? 'text-blue-600 font-bold' : ''}>Home</Link></li>
+                    <li><Link href="/about" className={pathname === '/about' ? 'text-blue-600 font-bold' : ''}>About</Link></li>
+                    <li><Link href='/contact' className={pathname === '/contact' ? 'text-blue-600 font-bold' : ''}>Contacts</Link></li>
+                    <li><Link href='/blogs' className={pathname === '/blogs' ? 'text-blue-600 font-bold' : ''}>Blogs</Link></li>
+                    <li><Link href='/dashboard' className={pathname === '/dashboard' ? 'text-blue-600 font-bold' : ''}>DashBoard</Link></li>
+                    <li><Link href='/users' className={pathname === '/users' ? 'text-blue-600 font-bold' : ''}>Users</Link></li>
 
                 </ul>
             </div>
